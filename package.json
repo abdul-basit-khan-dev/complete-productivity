@@ -1,0 +1,13 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start-backend": "cd backend/server && npm start",
+    "start-client": "cd client && PORT=3001 npm start",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-client -- --port=4000\""
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  },
+  "license": "ISC"
+}
